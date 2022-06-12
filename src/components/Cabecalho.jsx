@@ -1,5 +1,6 @@
 import imagem from '../assets/img/doguito.svg'
 import '../assets/css/componentes/cabecalho.css'
+import {Link} from 'react-router-dom'
 
 export default function Cabecalho () {
   return (
@@ -10,25 +11,25 @@ export default function Cabecalho () {
         </span>
       </div>
       <div className="cabecalho-container">
-        <a href="/" className="flex flex--centro">
+        <Link to="/" className="flex flex--centro">
           <img className='cabecalho__logo' src={imagem} alt="Logo doguito" />
           <h1 className='cabecalho__titulo'>Petshop</h1>
-        </a>
+        </Link>
       </div>
 
       <nav className='menu-cabecalho'>
         <ul className='menu-itens'>
           <li>
-            <a href="#" className='menu-item menu-item--entrar'>Entrar</a>
+            <Link to="#" className='menu-item menu-item--entrar'>Entrar</Link>
           </li>
           <li>
-            <a href="#" className='menu-item'>Produtos</a>
+            <Link to="#" className='menu-item'>Produtos</Link>
           </li>
           <li>
-            <a href="/" className='menu-item'>Blog</a>
+            <Link to="/" className='menu-item'>Blog</Link>
           </li>
           <li>
-            <a href="/sobre" className='menu-item'>Sobre</a>
+            <Link to="/sobre" className='menu-item'>Sobre</Link>
           </li>
         </ul>
       </nav>
